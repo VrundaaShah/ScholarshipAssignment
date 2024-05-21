@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Analyzing Climate Change Impact on Vegetation Dynamics in the Four Corners Region</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/background.jpeg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0">Scholarship Assignment</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Analysis</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Analyzing Climate Change Impact on Vegetation Dynamics in the Four Corners Region</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">A Detailed Analysis of Climate Change Impact from 1980 - 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Introduction Start -->
+    <div class="container-xxl py-5 destination">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="section-title text-center text-primary px-3">Introduction</h2>
+
+            </div>
+            <div class="row g-3">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <p class="text-center">
+                                "Climate change is the greatest threat to our existence in our short history on this planet.
+                                 Nobody's going to buy their way out of its effects." 
+                            </p>
+                            <p>
+                                The Four Corners is a region of the Southwestern United States consisting of the southwestern corner of Colorado,
+                                southeastern corner of Utah, northeastern corner of Arizona, and northwestern corner of New Mexico.
+                                This project aims to analyze and visualize the impacts of climate change on this region over the years, using comprehensive climate data.
+                                This dataset consists of crucial climate variables such as temperature and precipitation across different seasons. 
+                                I am going to utilise these climate variables to analyse the change in patterns in vegetation such as increase or decrease in percentage coverage of 
+                                bare ground, tree canopy, herbs, shrubs and plant litter.The general hypotheses is that the Four Corners region, particularly the Natural
+                                Bridges National Monument in Utah, has experienced various changes in vegetation over the past decades. 
+                                I will display a visual analysis aiming to explore the changes using vegetation metrics from 1980 to 2024 to either accept or reject the hypotheses.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Introduction End -->
+
+    <!-- Data Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="section-title text-center text-primary px-3">About the Data</h2>
+                <p>
+                    I have merged the two datasets :- historical and nearterm dataset. 
+                    The historical dataset ranges from 1980 - 2018 and the Nearterm dataset ranges from 2021-2024.
+                    The data consists of 29 columns of which the key variables are Temperature, Precipitation, 
+                    Volumetric Water Content (VWC), and vegetation metrics like tree canopy, herb cover, and 
+                    bare ground. <p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+        
+                            <h5>Long and Lat</h5>
+                            <p>The longitude and latitude of the datapoint</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+
+                            <h5>Year and Time Period</h5>
+                            <p>Year is the range from 1980-2018 and 2021-2024 and time period is categorical(Hist and NT)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+
+                            <h5>RCP and scenario</h5>
+                            <p>Scenarios that include assumptions about future economic activity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+
+                            <h5>Vegetation Metrics</h5>
+                            <p>Percentage of tree canopy, herbs, shrubs and bare coverage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+
+                            <h5>Temperature</h5>
+                            <p>Temperature in winter, summer and annually. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+
+                            <h5>Precipitation</h5>
+                            <p>Precipitation in winter, summer and annually. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+
+                            <h5>VWC</h5>
+                            <p>Volumetric water content for all 4 seasons. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+
+                            <h5>Soil Profile</h5>
+                            <p>Dry and Non dry soil days in the soil profile during summer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Data End -->
+
+    <!-- Process Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.5s">
+                <h2 class="section-title text-center text-primary px-3">Process</h2>
+            </div>
+            <div class="row gy-5 gx-4 justify-content-center">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+
+                        <h5 class="mt-4">Data Merging and Cleaning</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"> There were 2 datasets available which I merged into a single file. There were extensive missing values 
+                        in the dataset which I imputed using groupby for year and scenario and filling the NA values with average, max and min values.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+
+                        <h5 class="mt-4">Feature Engineering</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0"> Extensively studied the structure of the data and the relationship of one variable with the other. 
+                            Performed correlation analysis and used heatmaps to study this time series data and analyse the vegetation cover.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+            
+                        <h5 class="mt-4">Visual Analysis</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Finally, the data was analyzed using different methods of Data Visualizations tools such as Plotly.
+                            The inferences from these plots has helped me to understand the
+                            impact of climate change on vegetation cover better.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Process Start -->
+
+    <!-- Package Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="section-title text-center text-primary px-3">Visual Analysis</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-xxl-12" data-wow-delay="0.1s">
+                    <body>
+                    <iframe src="map.html" width="100%" height="600" style="border:none;"></iframe>
+                      <!-- partial:index.partial.html -->
+                      <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
+                      <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                      <script src="https://code.highcharts.com/modules/export-data.js"></script>
+                      <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
+                      
+                      <figure class="highcharts-figure">
+                        <div id="container"></div>
+                        <p class="highcharts-description"><br><br>
+                        I am choosing to study tree canopy to begin with my analysis for the project. The mapbox displays the tree canopy coverage datapoints in the Four Corners region. The data points are located in the
+                        Natural Bridges National Monument in Utah. Hovering over the datapoint provides us with information like the tree canopy
+                        coverage, the latitude and longitude of the datapoint and the year. The slider gives a vivid idea of the change in tree canopy coverage.
+                        To get a more detailed idea of the change in tree canopy coverage, I have used the below chart to showcase my findings.
+                        
+                        </p>
+                      </figure>
+                      <!-- partial -->
+                      
+
+                    </body>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Package End -->
+
+      <!-- Package Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="section-title text-center text-primary px-3">Visual Analysis</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-xxl-12" data-wow-delay="0.1s">
+                    <body>
+                    <iframe src="linetree.html" width="100%" height="600" style="border:none;"></iframe>
+                      <!-- partial:index.partial.html -->
+                      <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
+                      <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                      <script src="https://code.highcharts.com/modules/export-data.js"></script>
+                      <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
+                      
+                      <figure class="highcharts-figure">
+                        <div id="container"></div>
+                        <p class="highcharts-description"><br><br>
+                            The line chart reveals two significant decreases in tree canopy coverage: one from 1982 to 1985 and another from 2017 to 2023.
+                            These declines could be attributed to environmental factors such as droughts or changes in land use. To explain this, we'll look at the climate chart but before that
+                            I want to analyse if there's a change in other vegetation for the same time period eg :- Is there a change in herbs and shrubs percentage coverage in the region during the same time when tree canopy displayed a significant decrease?
+                            I am going to further analyse for years 1982 and 1985 because it has a higher decrease. 
+                        </p>
+                      </figure>
+                      <!-- partial -->
+                      
+
+                    </body>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Package End -->
+
+    <!-- Package Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <iframe src="pie.html" width="100%" height="600" style="border:none;"></iframe>
+            <p class="highcharts-description"> <br><br>
+            From the above donut charts, it is evident that there is a 2% increase in the bare ground when there is about 2% decline for tree canopy. Apart from that there
+            has been no significant change in the vegetation in the four corners. This region however is predominantly covered in bare ground. The possible explanation for an increase in 
+            bare ground and decrease in tree canopy can be justified if there is a noticeable climate pattern change from 1982-1985. Hence, we'll look at the climate chart to further back this reasoning.
+            
+            </p>
+        </div>
+    </div>
+    <!-- Package End -->
+
+    <!-- Package Start -->
+      <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <iframe src="bar.html" width="100%" height="600" style="border:none;"></iframe>
+            <p class="highcharts-description"> <br><br>
+                From the above plot, it is evident that the 4 years after 1981 i.e years 1982-1985 experiences harsh winter. The possible explanantion for the decrease in tree canopy can 
+                be that the trees might be cut down and needed to provide warmth. Hence, this cutting down of trees increases the bare ground coverage.  
+            </p>
+        </div>
+    </div>
+    <!-- Package End -->
+
+    <!-- Package Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="col-xxl-12" data-wow-delay="0.1s">
+                <iframe src="vwc.html" width="100%" height="600" style="border:none;"></iframe>
+                <p class="highcharts-description"> <br><br>
+                    This radial chart highlights the Volumetric Water Content (VWC) in the soil profile across all four seasons: 
+                    Winter, Spring, Summer, and Fall. It clearly shows that water content is highest during the winter months, 
+                    followed by spring, fall, and then summer.During the winter season, the VWC is at its peak. This can be attributed
+                     to lower temperatures reducing evaporation rates and the possible accumulation of snow and subsequent melting, 
+                     which contributes to higher soil moisture levels. The high VWC in winter indicates that the soil retains more 
+                     moisture during this period, which can be beneficial for the survival of vegetation through the colder months.</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- Package End -->
+
+    <!-- Conclusion Start -->
+    <div class="container-xxl py-5 destination">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="section-title text-center text-primary px-3">Conclusions and Inferences</h2>
+
+            </div>
+            <div class="row g-3">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <p>
+                                From the above visual analysis, we can infer that the tree canopy in the Four Corners region, particularly in the Natural Bridges National Monument in Utah, has experienced significant changes from 1980 to 2024. The significant decreases in tree canopy coverage from 1982 to 1985 and from 2017 to 2023 can be attributed to environmental factors such as harsh winters and possibly increased human activity resulting in deforestation for warmth or other needs. Additionally, the increase in bare ground coverage during these periods supports the hypothesis that tree cutting could be a contributing factor.
+                                The climate chart further supports this by showing a noticeable pattern of extreme temperatures during the years of significant canopy decrease. The volumetric water content in the soil profile also indicates that water availability varies seasonally, which could impact vegetation health and growth.
+                                This study highlights the importance of monitoring and managing tree canopy and vegetation metrics to understand the impacts of climate change on ecosystems. 
+                                The findings can inform conservation strategies to mitigate the adverse effects of climate change and preserve the natural habitats in the region.
+
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Conclusion End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

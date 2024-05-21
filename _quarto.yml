@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "Analyzing Climate Change Impact on Vegetation Dynamics in the Four Corners Region"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: false
+
+
+
